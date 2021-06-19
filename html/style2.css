@@ -1,0 +1,31 @@
+#triangle{
+  width: 0px;
+  height: 0px;
+  border-left:  100px solid transparent;
+  border-right: 100px solid transparent;
+  border-top: 100px solid red;
+}
+#ovale{
+  width: 200px;
+  height: 100px;
+  background: dodgerblue;
+  border-radius: 50%;
+}
+#carre{
+  width: 300px;
+  height: 350px;
+  background: dodgerblue;
+  border-radius:25px ;
+  box-shadow: 0px 0px 20px grey;
+
+}
+hr, p, img{
+  margin: 10px;
+  color: white;
+}
+#h{
+  color: white;
+  margin-left: 10px;
+  padding-top: 20px;
+  text-shadow: 2px 2px 9px gray;
+}
