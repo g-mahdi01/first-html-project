@@ -1,0 +1,48 @@
+.box {
+  margin: 0 auto;
+  width: 600px; //you can set it in %.
+  height: 300px;
+  padding: 30px;
+  background: #f9f9f9;
+  border: 2px solid #333;
+  line-height: normal;
+  background-image: url("MyPic1.jpg");
+  color: white;
+}
+
+.pref {
+  background-color: #888;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.mytitle {
+  text-align: center;
+}
+
+li {
+  margin: 20px 0;
+}
+#head {
+  background: white url(nof.gif) left no-repeat;
+  padding-left: 17px;
+}
+
+span.textbox {
+  background-color: #fff;
+  color: #888;
+  line-height: 20px;
+  height: 20px;
+  padding: 3px;
+  border: 1px #888 solid;
+  font-size: 9pt;
+}
+
+span.textbox input {
+  border: 0px;
+  background-color: #fff;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1;
+}

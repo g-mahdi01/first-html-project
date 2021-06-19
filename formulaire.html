@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Mon Premier Formulair</title>
+    <link rel="stylesheet" href="mystyle.css" />
+  </head>
+  <body>
+    <div class="mytitle">
+      <h1>Votre Avis Nous Intéresse</h1>
+    </div>
+
+    <table style="width: 100%">
+      <tr>
+        <th>
+          <form>
+            <div id="information personel" class="box">
+              <fieldset>
+                <legend>informations Personelles</legend>
+                <ol>
+                  <li>
+                    <label for="name" style="float: left;"  >Nom </label>
+                    <input type="text" id="name" name="user_name" style="float: left;"/> &nbsp;
+                    
+                    
+                  </li>
+                  <li>
+                    <label for="birthday" style="float: left;">Date de naissance:</label>
+                    <input type="date" style="float: left;" id="birthday" name="birthday" />
+                  </li>
+
+                 
+                  <li>
+                    <label for="password" style="float: left;"> Mot de pass : </label>
+                    <input type="password" id="name" name="user_name"  style="float: left;"/>
+                  </li>
+
+                  <li>
+                    <label for="website" style="float: left;">Site : </label>
+                    <input
+                      type="url"
+                      id="website"
+                      name="website"
+                      pattern="https?://.+"
+                      title="Include http://"
+                      placeholder="http:// ou https://" style="float: left;"
+                    />
+                  </li>
+
+                  <li>
+                    <label for="cars" style="float: left;">Emploi:</label>
+
+                    <select name="cars" id="cars" style="float: left;">
+                      <option value="Etudiant">Etudiant</option>
+                      <option value="admin">Administrateur</option>
+                      <option value="Réseau">Réseau</option>
+                      <option value="Dev">Dévlopeur web</option>
+                      <option value="Dev2">Web Designe</option>
+                      <option value="Dev3">DevOps</option>
+                    </select>
+                  </li>
+                  <li>
+                    <label for="name" style="float: left;">Approx. Salair annuel</label>
+                    <input 
+                    style="float: left;"
+                      type="number"
+                      id="quantity"
+                      name="quantity"
+                      min="0"
+                      step="1000"
+                      placeholder="$"
+                    />
+                  </li>
+
+
+                </ol>
+              </fieldset>
+            </div>
+          </form>
+        </th>
+
+        <th>
+          <form>
+            <div id="information de contact " class="box">
+              <fieldset>
+                <legend>informations de contact</legend>
+                <ol>
+                  <ui>
+                    <li>
+                      <label for="name"  style="float: left;">Address ligne 1</label> </br>
+                      
+                    </li>
+                    <input type="text" id="name" name="user_name"  style="float: left;" /> &nbsp;
+                    <li>
+                      <label for="name"  style="float: left;">Address ligne 2</label> </br>
+                      
+                    </li>
+                    <input type="text" id="name" name="user_name"  style="float: left;" /> &nbsp;
+
+                    <li>
+                      <label for="cars"  style="float: left;">Pays:</label>
+
+                      <select name="cars" id="cars" style="width: 170px;float: left;"   > 
+                        <option value="Algerie">Algérie</option>
+                        <option value="Tunisie">Tunisie</option>
+                        <option value="Maroc">Maroc</option>
+                      </select>
+                    </li>
+                    
+                  
+                  <li>
+                    <label  style="float: left;">Tél</label>
+                    <input
+                    style="float: left;"
+                    type="text"
+                    placeholder="eg: +213 67..."
+
+                  />
+                  </li>
+                  <li>
+                    <label  style="float: left;"> Courrierl </label>
+                    <input
+                    style="float: left;"
+                    type="text"
+
+                  />
+                  </li>
+                  
+                  
+                  </ui>
+                </ol>
+              </fieldset>
+            </div>
+          </form>
+          
+        
+          
+          
+        </th>
+      </tr>
+    </table>
+    <div class="pref">  
+
+
+    <h1>Préférences</h1>
+    <label> Choisir une coleur : </label>
+    <input type="color" id="head" name="head" src="nof.gif" />
+  </br>
+    <label>Sur une échelle de 1 a 10 quelle est votre degré d'enthousiame pour HTML5? </label>
+    
+      <input
+        type="range"
+        min="1"
+        max="10"
+        value="5"
+        class="slider"
+        id="myRange"
+        oninput="this.nextElementSibling.value = this.value"
+      />
+      <output>5</output>
+      <p><button style="width: 100px">Envoyer</button></p>
+    </div>
+  </body>
+</html>
